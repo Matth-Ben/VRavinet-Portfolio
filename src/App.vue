@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <vue-airtable :base="base" :columns="['Warehouse Code', 'Street Address', 'County', 'Sales Tax Rate']" filter="AND({State} = 'CA', {Status} = 'Open', {Type} = 'Fulfillment')"></vue-airtable>
+<!--    <vue-airtable :base="base" :columns="['Warehouse Code', 'Street Address', 'County', 'Sales Tax Rate']" filter="AND({State} = 'CA', {Status} = 'Open', {Type} = 'Fulfillment')"></vue-airtable>-->
     <header>
       <div id="header">
         <nav></nav>
         <div class="header--content">
-          <div class="header--content--background" style="background-image: url('./assets/background-header.jpg')"></div>
+          <div class="header--content--background" style="background-image: url('./src/assets/background-header.jpg')"></div>
           <div class="header--content--sidebar--left">
             <div class="header--content--title">
               <h1 class="title">Intitulé de la vidéo</h1>

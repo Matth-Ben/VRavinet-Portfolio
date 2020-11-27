@@ -1,7 +1,40 @@
 html {
   margin: auto;
   max-width: 1440px;
-  padding: 15px;
+  padding: 0 15px 0;
+}
+
+body {
+  color: #f5e7d1;
+  margin: 0;
+}
+
+#header .header--content {
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+}
+#header .header--content .header--content--background {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#header .header--content .header--content--sidebar--left {
+  background-color: #595959;
+  height: 100vh;
+  width: 100vh;
+  max-width: 400px;
+}
+#header .header--content .header--content--sidebar-bottom {
+  background-color: #404040;
+  height: 100vh;
+  width: 100vh;
+  max-width: 800px;
+  max-height: 180px;
 }
 
 /*# sourceMappingURL=style.css.map */
