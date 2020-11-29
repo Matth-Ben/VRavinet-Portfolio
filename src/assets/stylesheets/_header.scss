@@ -13,10 +13,29 @@
       background-position: center;
     }
     .header--content--sidebar--left {
+      align-items: center;
       background-color: #595959;
+      display: flex;
       height: 100vh;
+      max-width: 500px;
       width: 100vh;
-      max-width: 400px;
+      .header--content--title {
+        .title {
+          color: $yellow;
+          font-size: 74px;
+          font-weight: bold;
+          left: 25vh;
+          position: absolute;
+          text-transform: uppercase;
+        }
+      }
+      .header--content--description {
+        padding-left: 10vh;
+        padding-right: 5vh;
+        .header--content--description--text {
+          text-align: justify;
+        }
+      }
     }
     .header--content--sidebar-bottom {
       background-color: #404040;

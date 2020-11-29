@@ -7,23 +7,25 @@
         <div class="header--content">
           <div class="header--content--background" style="background-image: url('./src/assets/background-header.jpg')"></div>
           <div class="header--content--sidebar--left">
-            <div class="header--content--title">
-              <h1 class="title">Intitulé de la vidéo</h1>
-            </div>
-            <div class="header--content--description">
-              <p class="header--content--description--text">
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Maecenas tincidunt ultricies
-                felis, ac rutrum libero accumsan vitae.
-                Sed in sem sed justo laoreet porttitor sed
-                at sem. Integer ut vestibulum ipsum, non
-                consequat risus. Proin finibus dignissim
-                urna. Integer in aliquam nisl, a gravida
-                justo. Sed sed fringilla ligula. Sed mollis
-                nibh eget nulla laoreet, non porttitor
-                turpis fermentum. Donec ultrices justo...
-              </p>
-              <button class="btn btn-primary">En savoir plus</button>
+            <div class="header--content--sidebar--left--content">
+              <div class="header--content--title">
+                <h1 class="title">Intitulé de la vidéo</h1>
+              </div>
+              <div class="header--content--description">
+                <p class="header--content--description--text">
+                  Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Maecenas tincidunt ultricies
+                  felis, ac rutrum libero accumsan vitae.
+                  Sed in sem sed justo laoreet porttitor sed
+                  at sem. Integer ut vestibulum ipsum, non
+                  consequat risus. Proin finibus dignissim
+                  urna. Integer in aliquam nisl, a gravida
+                  justo. Sed sed fringilla ligula. Sed mollis
+                  nibh eget nulla laoreet, non porttitor
+                  turpis fermentum. Donec ultrices justo...
+                </p>
+                <button class="btn btn-primary">En savoir plus</button>
+              </div>
             </div>
           </div>
           <div class="header--content--sidebar-bottom">
