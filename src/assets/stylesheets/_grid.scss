@@ -1,0 +1,16 @@
+$cols: 12;
+$gutter: 5px;
+$prefix: col;
+
+.row {
+  display: flex;
+  gap: $gutter;
+}
+
+@for $i from 1 through $cols {
+  .#{$prefix}#{$i} {
+    $w: 100% / $cols * $i;
+    flex-basis: $w;
+    box-sizing: border-box;
+  }
+}

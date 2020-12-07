@@ -1,8 +1,28 @@
 html {
+  background-color: $dark;
   margin: auto;
+  font-family: $montserrat;
+  font-weight: 300;
 }
 
 body {
   color: $light;
   margin: 0
+}
+
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+$spaceamounts: (margin, padding);
+$sides: (top, bottom, left, right);
+@for $i from 0 through 5 {
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+      .#{str-slice($space, 0, 1)}#{str-slice($side, 0, 1)}-#{$i} {
+        #{$space}-#{$side}: #{$i}rem;
+      }
+    }
+  }
 }
