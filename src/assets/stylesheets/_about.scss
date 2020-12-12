@@ -1,0 +1,33 @@
+#about {
+  .content {
+    .about--content {
+      height: 100%;
+      position: relative;
+      .about--content--image {
+        position: sticky;
+        top: 5vw;
+        img {
+          border-radius: 25px;
+        }
+      }
+      .about--content--container {
+        background-color: $yellow;
+        border-radius: 25px;
+        padding: 5% 10%;
+        .about--content--title {
+          font-family: $archivo;
+          font-size: 64px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        .about--content--paragraph {
+          font-size: 26px;
+          line-height: 30px;
+          .about--content--paragraph--item {
+            min-height: 30vw;
+          }
+        }
+      }
+    }
+  }
+}
