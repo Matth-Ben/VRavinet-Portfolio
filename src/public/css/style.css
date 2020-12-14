@@ -312,9 +312,11 @@ body {
 }
 
 #header .header--content {
+  position: relative;
+}
+#header .header--content .header--content--slide--item {
   align-items: flex-end;
   display: flex;
-  position: relative;
 }
 #header .header--content .header--content--background {
   height: 100vh;
@@ -373,6 +375,7 @@ body {
   height: 100vh;
   max-width: 55vw;
   max-height: 180px;
+  min-width: 55vw;
 }
 #header .header--content .header--content--sidebar-bottom .header--content--year,
 #header .header--content .header--content--sidebar-bottom .header--content--tag {

@@ -1,8 +1,10 @@
 #header {
   .header--content {
-    align-items: flex-end;
-    display: flex;
     position: relative;
+    .header--content--slide--item {
+      align-items: flex-end;
+      display: flex;
+    }
     .header--content--background {
       height: 100vh;
       width: 100%;
@@ -62,6 +64,7 @@
       height: 100vh;
       max-width: 55vw;
       max-height: 180px;
+      min-width: 55vw;
 
       .header--content--year,
       .header--content--tag {

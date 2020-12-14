@@ -7,9 +7,10 @@
       <About></About>
     </section>
     <section>
-      <div id="">
-
-      </div>
+      <InfoVideo></InfoVideo>
+    </section>
+    <section>
+      <InfoPhoto></InfoPhoto>
     </section>
   </div>
 </template>
@@ -17,12 +18,16 @@
 <script>
 import About from './components/About/About'
 import Header from './components/Header/Header'
+import InfoPhoto from './components/Info/InfoPhoto'
+import InfoVideo from './components/Info/InfoVideo'
 
 export default {
   name: 'app',
   components: {
     About,
-    Header
+    Header,
+    InfoPhoto,
+    InfoVideo
   }
 }
 </script>

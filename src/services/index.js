@@ -1,17 +1,21 @@
 import axios from 'axios'
 
 const Axios = axios.create({
-  baseURL: "https://api.airtable.com/v0/appi0QKsV0ERgFCd1/VRavinet-default"
+  baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/ContentHome"
 });
 const Paragraph = axios.create({
-  baseURL: "https://api.airtable.com/v0/appi0QKsV0ERgFCd1/VRavinet-paragraph"
+  baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/HomeParagraph"
 });
 const Header = axios.create({
-  baseURL: "https://api.airtable.com/v0/appi0QKsV0ERgFCd1/VRavinet-header"
+  baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/ProjectVideo"
+});
+const ContenHome = axios.create({
+  baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/ContentHome"
 });
 Axios.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
 Paragraph.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
 Header.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
+ContenHome.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
 
 export default{
   getInfo () {
@@ -26,7 +30,11 @@ export default{
     return Header.get()
   },
 
-  getIngo (slug) {
+  getInfoHome () {
+    return ContenHome.get()
+  },
+
+  getInfo (slug) {
     return Axios.get("?filterByFormula={Slug}='" + slug + "'")
   }
 }

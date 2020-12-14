@@ -2,7 +2,7 @@
   <div id="header">
     <!--        <nav></nav>-->
     <div class="header--content">
-      <div v-for="header in headers">
+      <div v-for="header in headers" v-if="header.enabled">
         <header-item v-bind="header"></header-item>
       </div>
     </div>
@@ -19,7 +19,8 @@ export default {
   },
   data () {
     return {
-      airtableResponse: []
+      index: 0,
+      slides: []
     }
   },
   mounted: function () {
@@ -28,7 +29,7 @@ export default {
       try {
         const response = await ContentHeader.getHeader()
         console.log(response)
-        self.airtableResponse = response.data.records
+        self.slides = response.data.records
       } catch ( err ) {
         console.log( err )
       }
@@ -39,12 +40,14 @@ export default {
     headers () {
       let self = this
       let headerList = []
-      for  ( let i = 0; i < self.airtableResponse.length; i++ ) {
+      for  ( let i = 0; i < self.slides.length; i++ ) {
         let headers = {
-          title: self.airtableResponse[i].fields.Title,
-          paragraph: self.airtableResponse[i].fields.Paragraph,
-          year: self.airtableResponse[i].fields.Year,
-          taxonomy: self.airtableResponse[i].fields.Taxonomy,
+          title: self.slides[i].fields.Title,
+          paragraph: self.slides[i].fields.Paragraph,
+          video: self.slides[i].fields.Video,
+          year: self.slides[i].fields.Year,
+          taxonomy: self.slides[i].fields.Taxonomy,
+          enabled: self.slides[i].fields.Preview,
         }
         headerList.push ( headers )
       }

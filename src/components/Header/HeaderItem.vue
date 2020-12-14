@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div class="header--content--slide--item">
     <div class="header--content--background">
+<!--      <iframe :src=video frameborder="0" allow="autoplay"></iframe>-->
       <video autoplay loop id="bgvid">
-        <source src="../../public/video/MASTER_&_MIX-Etalo_classique.mp4" type="video/mp4">
+        {{ video }}
+        <source :src=video type="video/mp4">
       </video>
     </div>
     <div class="header--content--sidebar--left">
@@ -33,6 +35,7 @@ export default {
   props: {
     title: String,
     paragraph: String,
+    video: String,
     year: String,
     taxonomy: String
   }
