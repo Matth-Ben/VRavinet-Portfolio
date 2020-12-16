@@ -3,6 +3,61 @@
   gap: 5px;
 }
 
+.grid {
+  display: grid;
+  overflow: hidden;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 0;
+}
+
+.grid1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.grid8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.grid9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.grid10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.grid11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.grid12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .col1 {
   flex-basis: 8.3333333333%;
   box-sizing: border-box;
@@ -419,6 +474,39 @@ body {
 }
 #about .content .about--content .about--content--container .about--content--paragraph .about--content--paragraph--item {
   min-height: 30vw;
+}
+
+#info--video .info--container .row,
+#info--photo .info--container .row {
+  gap: 0;
+}
+#info--video .info--container .info--container--content,
+#info--photo .info--container .info--container--content {
+  background-color: #81848a;
+  height: 100%;
+  padding: 6rem 4rem;
+}
+#info--video .info--container .info--container--content .info--container--content--title,
+#info--photo .info--container .info--container--content .info--container--content--title {
+  font-size: 58px;
+  line-height: 58px;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+  max-width: 400px;
+}
+#info--video .info--container .info--container--image,
+#info--photo .info--container .info--container--image {
+  height: 100%;
+  width: 100%;
+}
+#info--video .info--container .info--container--image div,
+#info--photo .info--container .info--container--image div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

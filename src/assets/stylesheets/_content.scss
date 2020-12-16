@@ -1,4 +1,32 @@
 #info--video,
 #info--photo {
-  
+  .info--container {
+    .row {
+      gap: 0;
+    }
+    .info--container--content {
+      background-color: $grey;
+      height: 100%;
+      padding: 6rem 4rem;
+      .info--container--content--title {
+        font-size: 58px;
+        line-height: 58px;
+        font-weight: 700;
+        font-family: $archivo;
+        text-transform: uppercase;
+        max-width: 400px;
+      }
+    }
+    .info--container--image {
+      height: 100%;
+      width: 100%;
+      div {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
 }

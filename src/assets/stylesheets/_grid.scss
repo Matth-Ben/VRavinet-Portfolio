@@ -7,6 +7,19 @@ $prefix: col;
   gap: $gutter;
 }
 
+.grid {
+  display: grid;
+  overflow: hidden;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 0;
+}
+
+@for $i from 1 through $cols {
+  .grid#{$i} {
+    grid-template-columns: repeat( $i, 1fr);
+  }
+}
+
 @for $i from 1 through $cols {
   .#{$prefix}#{$i} {
     $w: 100% / $cols * $i;

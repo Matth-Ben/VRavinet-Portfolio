@@ -2,9 +2,8 @@
   <div class="header--content--slide--item">
     <div class="header--content--background">
 <!--      <iframe :src=video frameborder="0" allow="autoplay"></iframe>-->
-      <video autoplay loop id="bgvid">
-        {{ video }}
-        <source :src=video type="video/mp4">
+      <video v-for="v in video" autoplay loop id="bgvid">
+        <source :src="v.url" type="video/mp4">
       </video>
     </div>
     <div class="header--content--sidebar--left">

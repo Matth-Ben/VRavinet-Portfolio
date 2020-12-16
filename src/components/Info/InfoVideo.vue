@@ -1,15 +1,18 @@
 <template>
   <div id="info--video">
-    <div class="info--content">
-      <div class="row">
-        <div class="col6">
-          <div v-for="image in infos.image">
-            <img :src="image.url" style="width: 100%" />
+    <div class="info--container">
+      <div class="grid grid2">
+        <div class="grid-item">
+          <div class="info--container--image" v-for="image in infos.image">
+            <div v-bind:style="{ backgroundImage: 'url(' + image.url + ')' }"></div>
+<!--            <img class="info&#45;&#45;container&#45;&#45;image&#45;&#45;item" :src="image.url" style="width: 100%" />-->
           </div>
         </div>
-        <div class="col6">
-          <h2>{{infos.title}}</h2>
-          <p>{{infos.paragraphs}}</p>
+        <div class="grid-item">
+          <div class="info--container--content">
+            <h2 class="info--container--content--title">{{infos.title}}</h2>
+            <p class="info--container--content--paragraph">{{infos.paragraphs}}</p>
+          </div>
         </div>
       </div>
     </div>

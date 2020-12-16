@@ -1,15 +1,17 @@
 <template>
   <div id="info--photo">
-    <div class="info--content">
-      <div class="row">
-        <div class="col6">
-          <div v-for="image in infos.image">
-            <img :src="image.url" style="width: 100%" />
+    <div class="info--container">
+      <div class="grid grid2">
+        <div class="grid-item">
+          <div class="info--container--image" v-for="image in infos.image">
+            <div v-bind:style="{ backgroundImage: 'url(' + image.url + ')' }"></div>
           </div>
         </div>
-        <div class="col6">
-          <h2>{{infos.title}}</h2>
-          <p>{{infos.paragraphs}}</p>
+        <div class="grid-item">
+          <div class="info--container--content">
+            <h2 class="info--container--content--title">{{infos.title}}</h2>
+            <p class="info--container--content--paragraph">{{infos.paragraphs}}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -30,7 +32,6 @@ export default {
     async function getInfoPhoto () {
       try {
         const response = await InfoPhoto.getInfoHome()
-        console.log(response)
         self.airtableResponse = response.data.records
       } catch ( err ) {
         console.log( err )
