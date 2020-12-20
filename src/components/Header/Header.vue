@@ -27,7 +27,7 @@ export default {
     let self = this
     async function getHeader () {
       try {
-        const response = await ContentHeader.getHeader()
+        const response = await ContentHeader.getProject()
         console.log(response)
         self.slides = response.data.records
       } catch ( err ) {

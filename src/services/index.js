@@ -6,16 +6,16 @@ const Axios = axios.create({
 const Paragraph = axios.create({
   baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/HomeParagraph"
 });
-const Header = axios.create({
-  baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/ProjectVideo"
+const Project = axios.create({
+  baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/Project"
 });
-const ContenHome = axios.create({
-  baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/ContentHome"
+const Image = axios.create({
+  baseURL: "https://api.airtable.com/v0/appluPpN8L1W9V0tO/ImageHome"
 });
 Axios.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
 Paragraph.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
-Header.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
-ContenHome.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
+Project.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
+Image.defaults.headers.common = {'Authorization': `Bearer keygFHin7wgEG0SBU`}
 
 export default{
   getInfo () {
@@ -26,12 +26,12 @@ export default{
     return Paragraph.get()
   },
 
-  getHeader () {
-    return Header.get()
+  getProject () {
+    return Project.get()
   },
 
-  getInfoHome () {
-    return ContenHome.get()
+  getImage () {
+    return Image.get()
   },
 
   getInfo (slug) {

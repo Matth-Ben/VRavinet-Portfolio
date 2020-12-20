@@ -14,7 +14,7 @@
             <div class="about--content--container">
               <h2 class="about--content--title">A propos de moi</h2>
               <div class="about--content--paragraph">
-                <div class="about--content--paragraph--item" v-for="paragraph in infos" v-if="paragraph.visible">
+                <div class="about--content--paragraph--item" v-for="paragraph in infos" v-if="paragraph.visible && paragraph.template === 'About'">
                   <about-paragraph v-bind="paragraph"></about-paragraph>
                 </div>
               </div>
@@ -59,7 +59,8 @@ export default {
       for  ( let i = 0; i < self.airtableResponse.length; i++ ) {
         let info = {
           paragraph: self.airtableResponse[i].fields.Paragraph,
-          visible: self.airtableResponse[i].fields.Visible
+          visible: self.airtableResponse[i].fields.Visible,
+          template: self.airtableResponse[i].fields.Template
         }
         paragraphList.push ( info )
       }
