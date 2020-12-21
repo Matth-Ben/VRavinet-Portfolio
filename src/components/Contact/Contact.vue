@@ -4,8 +4,17 @@
     <div class="row">
       <div class="col4">
         <div class="contact--rs">
-          <div class="row">
-            <div class=" "></div>
+          <div class="grid grid2">
+            <div class="grid-item">
+              <div class="svg--insta">
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="svg--linkedin">
+                <a href=""><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
