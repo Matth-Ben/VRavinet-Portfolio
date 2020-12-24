@@ -1,0 +1,17 @@
+#footer {
+  font-size:  1.4vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5vw;
+  .madeby {
+    margin-left: 3vw;
+    a {
+      color: $light;
+      text-decoration: none;
+      &:hover {
+        color: $yellow;
+        transition: .3s;
+      }
+    }
+  }
+}
