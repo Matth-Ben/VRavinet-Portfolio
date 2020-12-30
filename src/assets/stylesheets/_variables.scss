@@ -5,6 +5,14 @@ html {
   font-weight: 300;
 }
 
+h2 {
+  font-size: 4vw;
+  line-height: 3vw;
+  font-weight: 700;
+  font-family: $archivo;
+  text-transform: uppercase;
+}
+
 body {
   color: $light;
   margin: 0

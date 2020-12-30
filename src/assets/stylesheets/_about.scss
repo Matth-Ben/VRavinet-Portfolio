@@ -15,13 +15,9 @@
         border-radius: 25px;
         padding: 5% 10%;
         .about--content--title {
-          font-family: $archivo;
-          font-size: 64px;
-          font-weight: 700;
-          text-transform: uppercase;
         }
         .about--content--paragraph {
-          font-size: 26px;
+          font-size: 1.3vw;
           line-height: 30px;
           .about--content--paragraph--item {
             min-height: 30vw;

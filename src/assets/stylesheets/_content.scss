@@ -9,12 +9,10 @@
       height: 100%;
       padding: 6rem 4rem;
       .info--container--content--title {
-        font-size: 58px;
-        line-height: 58px;
-        font-weight: 700;
-        font-family: $archivo;
-        text-transform: uppercase;
         max-width: 400px;
+      }
+      .info--container--content--paragraph {
+        font-size: 1.2vw;
       }
     }
     .info--container--image {

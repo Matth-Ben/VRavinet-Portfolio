@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
     <h2 class="contact--title">Contact</h2>
-    <hr class="separator grey mt-0">
+    <hr class="separator grey mt-1">
     <div class="row">
       <div class="col8">
         <div class="contact--info">

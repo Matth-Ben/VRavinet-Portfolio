@@ -146,6 +146,14 @@ html {
   font-weight: 300;
 }
 
+h2 {
+  font-size: 4vw;
+  line-height: 3vw;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+}
+
 body {
   color: #f5e7d1;
   margin: 0;
@@ -412,7 +420,7 @@ body {
 #header .header--content .header--content--sidebar--left .header--content--title .title {
   color: #ecaa42;
   font-family: "Archivo Black", sans-serif;
-  font-size: 82px;
+  font-size: 4.5vw;
   font-weight: 900;
   left: 25vh;
   position: relative;
@@ -425,7 +433,7 @@ body {
   padding-right: 5vh;
 }
 #header .header--content .header--content--sidebar--left .header--content--description .header--content--description--text {
-  font-size: 18px;
+  font-size: 1vw;
   line-height: 24px;
   letter-spacing: 0.5px;
 }
@@ -468,14 +476,8 @@ body {
   border-radius: 25px;
   padding: 5% 10%;
 }
-#about .content .about--content .about--content--container .about--content--title {
-  font-family: "Archivo", sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 #about .content .about--content .about--content--container .about--content--paragraph {
-  font-size: 26px;
+  font-size: 1.3vw;
   line-height: 30px;
 }
 #about .content .about--content .about--content--container .about--content--paragraph .about--content--paragraph--item {
@@ -494,12 +496,11 @@ body {
 }
 #info--video .info--container .info--container--content .info--container--content--title,
 #info--photo .info--container .info--container--content .info--container--content--title {
-  font-size: 58px;
-  line-height: 58px;
-  font-weight: 700;
-  font-family: "Archivo", sans-serif;
-  text-transform: uppercase;
   max-width: 400px;
+}
+#info--video .info--container .info--container--content .info--container--content--paragraph,
+#info--photo .info--container .info--container--content .info--container--content--paragraph {
+  font-size: 1.2vw;
 }
 #info--video .info--container .info--container--image,
 #info--photo .info--container .info--container--image {
@@ -516,7 +517,7 @@ body {
 }
 
 #contact .contact--title {
-  font-size: 89px;
+  font-size: 4.5vw;
   margin-bottom: 0;
   margin-left: 5vw;
   text-transform: uppercase;
