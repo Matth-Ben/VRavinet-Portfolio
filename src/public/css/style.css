@@ -521,6 +521,38 @@ body {
   margin-left: 5vw;
   text-transform: uppercase;
 }
+#contact .contact--info {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#contact .contact--info .contact--info--item {
+  margin: 0;
+}
+#contact .contact--info a {
+  color: #f5e7d1;
+  font-size: 2.5vw;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#contact .contact--info a:hover {
+  color: #ecaa42;
+  transition: 0.3s;
+}
+#contact .contact--rs {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+#contact .contact--rs a {
+  color: #f5e7d1;
+  font-size: 4vw;
+  margin-right: 2vw;
+  transition: 0.3s;
+}
+#contact .contact--rs a:hover {
+  color: #ecaa42;
+  transition: 0.3s;
+}
 
 #footer {
   font-size: 1.4vw;

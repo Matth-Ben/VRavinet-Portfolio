@@ -3,7 +3,7 @@
     <h2 class="contact--title">Contact</h2>
     <hr class="separator grey mt-0">
     <div class="row">
-      <div class="col4">
+      <div class="col8">
         <div class="contact--info">
           <h3 class="contact--info--item">
             <a class="contact--info--item--link" href="https://goo.gl/maps/kiEZiQ9E9gjGEhDY6" target="_blank">
@@ -22,14 +22,14 @@
           </h3>
         </div>
       </div>
-      <div class="col4">
+      <div class="col3">
         <div class="contact--rs">
-          <a href="https://www.instagram.com/victorrvnt/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-          <a href="https://www.linkedin.com/in/victor-ravinet-59aba3172/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/victorrvnt/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/victor-ravinet-59aba3172/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
-    <hr class="separator grey">
+    <hr class="separator grey mb-0">
   </div>
 </template>
 

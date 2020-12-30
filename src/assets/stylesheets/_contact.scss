@@ -5,4 +5,36 @@
     margin-left: 5vw;
     text-transform: uppercase;
   }
+  .contact--info {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    .contact--info--item {
+      margin: 0;
+    }
+    a {
+      color: $light;
+      font-size: 2.5vw;
+      text-decoration: none;
+      transition: .3s;
+      &:hover {
+        color: $yellow;
+        transition: .3s;
+      }
+    }
+  }
+  .contact--rs {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    a {
+      color: $light;
+      font-size: 4vw;
+      margin-right: 2vw;
+      transition: .3s;
+      &:hover {
+        color: $yellow;
+        transition: .3s;
+      }
+    }
+  }
 }
