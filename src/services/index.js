@@ -26,15 +26,15 @@ export default{
     return Paragraph.get()
   },
 
-  getProject () {
-    return Project.get()
-  },
-
   getImage () {
     return Image.get()
   },
 
-  getInfo (slug) {
+  getProjects () {
+    return Project.get()
+  },
+
+  getProject (slug) {
     return Axios.get("?filterByFormula={Slug}='" + slug + "'")
   }
 }

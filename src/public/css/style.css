@@ -555,6 +555,21 @@ body {
   transition: 0.3s;
 }
 
+#project .project--container {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#project .project--container .project--container--content .project--container--content--list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#project .project--container .project--container--content .project--container--content--list .project--container--content--item {
+  width: 50%;
+}
+#project .project--container .project--container--content .project--container--content--list .project--container--content--item img {
+  width: 100%;
+}
+
 #footer {
   font-size: 1.4vw;
   text-transform: uppercase;
@@ -571,6 +586,70 @@ body {
 #footer .madeby a:hover {
   color: #ecaa42;
   transition: 0.3s;
+}
+
+/****************/
+/*****Select*****/
+/****************/
+::-moz-selection {
+  /* Code for Firefox */
+  color: #f5e7d1;
+  background: #ecaa42;
+}
+
+::selection {
+  color: #f5e7d1;
+  background: #ecaa42;
+}
+
+html {
+  cursor: none;
+}
+
+a {
+  cursor: none;
+}
+a:hover {
+  cursor: none;
+}
+
+.g-cursor_hide {
+  opacity: 0;
+  transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
+}
+.g-cursor__circle {
+  pointer-events: none;
+  user-select: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ecaa42;
+  border-radius: 100%;
+  z-index: 5555;
+  backface-visibility: hidden;
+  transition: opacity 0.6s ease;
+}
+.g-cursor__point {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  user-select: none;
+  border-radius: 100%;
+  background: #ecaa42;
+  z-index: 55555555;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+.g-cursor_hover .g-cursor__circle {
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+  transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

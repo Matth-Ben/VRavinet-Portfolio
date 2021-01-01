@@ -1,0 +1,18 @@
+#project {
+  .project--container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    .project--container--content {
+      .project--container--content--list {
+        display: flex;
+        flex-wrap: wrap;
+        .project--container--content--item {
+          width: 50%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
