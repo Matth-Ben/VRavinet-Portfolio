@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Preloader></Preloader>
     <router-view />
     <div :class="[ 'g-cursor', { 'g-cursor_hover': hover }, {'g-cursor_hide': hideCursor} ]">
       <div :style="cursorCircle" class="g-cursor__circle"></div>
@@ -9,8 +10,12 @@
 </template>
 
 <script>
+import Preloader from './components/Preloader'
 export default {
   name: 'app',
+  components: {
+    Preloader
+  },
   data () {
     return {
       showNav: false,
