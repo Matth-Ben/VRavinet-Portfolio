@@ -187,17 +187,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background: #252e33;
   z-index: 9999;
 }
 .preloader .logo {
-  width: 170px;
-  height: 158px;
-  background: url("https://scontent-mrs2-1.xx.fbcdn.net/v/t1.15752-9/134931742_199396081904329_4476346111864850394_n.png?_nc_cat=105&ccb=2&_nc_sid=ae9488&_nc_ohc=pH3h5WZ5aM0AX-UuTX5&_nc_ht=scontent-mrs2-1.xx&oh=cd8bf14f6d8fbfab20dd86397561fa1f&oe=6016EA34") no-repeat;
-  background-size: contain;
+  width: 100%;
+}
+.preloader .logo video {
+  width: 100%;
 }
 .preloader .logo p {
   font: 600 1.5rem "Archivo", sans-serif;

@@ -1,14 +1,10 @@
 <template>
   <transition name="fade">
     <div v-if="show" class="preloader">
-      <div class="logo"></div>
-      <p>Victor Ravinet</p>
-      <div class="circles">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+      <div class="logo">
+        <video autoplay>
+          <source src="../public/video/intro-victorrvnt-4k-60fps.webm" type="video/webm">
+        </video>
       </div>
     </div>
   </transition>
@@ -29,7 +25,7 @@ export default {
     showToggle(){
       setTimeout(() => {
         this.show = false
-      }, 10000)
+      }, 6000)
     }
   }
 }
