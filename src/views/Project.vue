@@ -1,5 +1,10 @@
 <template>
   <div id="project">
+    <div class="arrow--return">
+      <router-link to="/">
+        <i class="fas fa-long-arrow-alt-left"><span>Retour</span></i>
+      </router-link>
+    </div>
     <section class="single--project">
       <div class="container">
         <div class="row">
@@ -19,7 +24,8 @@
 
               <div class="grid grid2" v-if="!!project.galerie">
                 <div class="grid-item" v-for="image in project.galerie">
-                  <img style="width: 100%; height: auto" :src="image.url" :width="image.thumbnails.large.width" :height="image.thumbnails.large.height"/>
+                  <img style="width: 100%; height: auto" :src="image.url" v-if="image.thumbnails.large.width" :width="image.thumbnails.large.width" :height="image.thumbnails.large.height"/>
+                  <img style="width: 100%; height: auto" :src="image.url" v-else/>
                 </div>
               </div>
             </div>
@@ -27,9 +33,11 @@
           <div class="col6">
             <div class="single--project--content">
               <div>
-                <h1 class="">{{ project.title }}</h1>
-                <h3>{{ project.taxonomy }}</h3>
-                <h3>{{ project.year }}</h3>
+                <h1 class="mt-0 mb-0">{{ project.title }}</h1>
+                <div class="d-flex flex-wrap-wrap">
+                  <h3 class="mr-1">Type : <span>{{ project.taxonomy }}</span></h3>
+                  <h3>Année : <span>{{ project.year }}</span></h3>
+                </div>
                 <p>{{ project.paragraph }}</p>
               </div>
             </div>

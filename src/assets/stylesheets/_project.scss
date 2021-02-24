@@ -17,8 +17,7 @@
   }
 
   .single--project {
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin: 1vw 5vw 0;
     &--content {
       height: 100%;
       display: flex;
@@ -33,11 +32,57 @@
         margin-left: -4vw;
       }
       h1 {
-        
+        font-size: 10vh;
+      }
+      h3 {
+        font-weight: 500;
+        span {
+          color: $yellow;
+          font-weight: bold;
+        }
       }
     }
     &--galery {
       padding-right: 4vw;
+      overflow-y: scroll;
+      max-height: 32vw;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+.arrow--return {
+  margin-top: 1.5vw;
+  margin-left: 7vw;
+  a {
+    text-decoration: none;
+  }
+  .fas {
+    font-size: 8vh;
+    display: flex;
+    align-items: center;
+    color: $blue;
+    transition: .3s;
+  }
+  span {
+    font-size: 4vh;
+    margin-left: 1vw;
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    font-family: "Archivo", sans-serif;
+  }
+  &:hover {
+    span {
+      visibility: visible;
+      transition: opacity 700ms, width 1ms linear 270ms, font-size 1ms linear 270ms;
+      opacity: 1;
+    }
+    .fas {
+      color: $yellow;
+      transition: .3s;
     }
   }
 }

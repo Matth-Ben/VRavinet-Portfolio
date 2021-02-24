@@ -30,6 +30,14 @@ body {
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 
+.d-flex {
+  display: flex;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
 .preloader {
   display: flex;
   flex-direction: column;

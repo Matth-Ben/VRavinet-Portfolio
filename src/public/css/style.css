@@ -182,6 +182,14 @@ body {
   text-align: right;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
 .preloader {
   display: flex;
   flex-direction: column;
@@ -621,8 +629,7 @@ body {
   width: 100%;
 }
 #project .single--project {
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 1vw 5vw 0;
 }
 #project .single--project--content {
   height: 100%;
@@ -638,8 +645,55 @@ body {
   margin-right: 4vw;
   margin-left: -4vw;
 }
+#project .single--project--content h1 {
+  font-size: 10vh;
+}
+#project .single--project--content h3 {
+  font-weight: 500;
+}
+#project .single--project--content h3 span {
+  color: #ecaa42;
+  font-weight: bold;
+}
 #project .single--project--galery {
   padding-right: 4vw;
+  overflow-y: scroll;
+  max-height: 32vw;
+}
+#project .single--project--galery::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow--return {
+  margin-top: 1.5vw;
+  margin-left: 7vw;
+}
+.arrow--return a {
+  text-decoration: none;
+}
+.arrow--return .fas {
+  font-size: 8vh;
+  display: flex;
+  align-items: center;
+  color: #005d82;
+  transition: 0.3s;
+}
+.arrow--return span {
+  font-size: 4vh;
+  margin-left: 1vw;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  font-family: "Archivo", sans-serif;
+}
+.arrow--return:hover span {
+  visibility: visible;
+  transition: opacity 700ms, width 1ms linear 270ms, font-size 1ms linear 270ms;
+  opacity: 1;
+}
+.arrow--return:hover .fas {
+  color: #ecaa42;
+  transition: 0.3s;
 }
 
 #footer {
