@@ -4,14 +4,24 @@
     margin-right: 5vw;
     .project--container--content {
       .project--container--content--list {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-auto-rows: auto;
+        gap: 24px;
         .project--container--content--item {
-          width: 50%;
+          max-width:100%;
+          height:auto;
+          display:block;
+          margin-bottom:8px;
           img {
             width: 100%;
           }
         }
+      }
+      .project--container--content--list--favoris {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-auto-rows: auto;
       }
     }
   }
@@ -45,7 +55,7 @@
     &--galery {
       padding-right: 4vw;
       overflow-y: scroll;
-      max-height: 32vw;
+      max-height: 50vw;
       &::-webkit-scrollbar {
         display: none;
       }

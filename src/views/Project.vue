@@ -23,9 +23,16 @@
               </div>
 
               <div class="grid grid2" v-if="!!project.galerie">
-                <div class="grid-item" v-for="image in project.galerie">
-                  <img style="width: 100%; height: auto" :src="image.url" v-if="image.thumbnails.large.width" :width="image.thumbnails.large.width" :height="image.thumbnails.large.height"/>
-                  <img style="width: 100%; height: auto" :src="image.url" v-else/>
+                <div class="grid-item lightbox" v-for="(image, key) in project.galerie">
+                  <a :href="'#dog'+key">
+                    <img style="width: 100%; height: auto" :src="image.url" v-if="image.thumbnails.large.width" :width="image.thumbnails.large.width" :height="image.thumbnails.large.height"/>
+                    <img style="width: 100%; height: auto" :src="image.url" v-else/>
+                  </a>
+                </div>
+                <div class="lightbox-target" v-for="(image, key) in project.galerie" :id="'dog'+key">
+                  <img :src="image.url" v-if="image.thumbnails.large.width" :width="image.thumbnails.large.width" :height="image.thumbnails.large.height"/>
+                  <img :src="image.url" v-else/>
+                  <a class="lightbox-close" href="#"></a>
                 </div>
               </div>
             </div>

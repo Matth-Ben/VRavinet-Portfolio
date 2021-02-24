@@ -3,7 +3,7 @@
     <div class="project--container">
       <div class="project--container--content">
         <h2 class="project--container--content--title text-center">Mes projets</h2>
-        <div class="project--container--content--list">
+        <div class="project--container--content--list project--container--content--list--favoris">
           <div class="project--container--content--item" v-for="project in projects" v-if="project.preview !== true && project.favoris === true">
             <a :href="project.url">
               <div v-for="image in project.photo">
