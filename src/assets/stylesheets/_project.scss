@@ -15,4 +15,29 @@
       }
     }
   }
+
+  .single--project {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    &--content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 4vw;
+      &:before {
+        content: '';
+        height: 100%;
+        width: 1px;
+        border-left: 2px solid $yellow;
+        margin-right: 4vw;
+        margin-left: -4vw;
+      }
+      h1 {
+        
+      }
+    }
+    &--galery {
+      padding-right: 4vw;
+    }
+  }
 }

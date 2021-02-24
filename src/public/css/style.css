@@ -620,6 +620,27 @@ body {
 #project .project--container .project--container--content .project--container--content--list .project--container--content--item img {
   width: 100%;
 }
+#project .single--project {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#project .single--project--content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 4vw;
+}
+#project .single--project--content:before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  border-left: 2px solid #ecaa42;
+  margin-right: 4vw;
+  margin-left: -4vw;
+}
+#project .single--project--galery {
+  padding-right: 4vw;
+}
 
 #footer {
   font-size: 1.4vw;

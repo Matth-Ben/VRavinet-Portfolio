@@ -15,7 +15,7 @@
             {{ paragraph }}
           </p>
           <div class="text-center mt-3">
-            <button class="btn btn-primary">En savoir plus</button>
+            <a :href="url" class="btn btn-primary">En savoir plus</a>
           </div>
         </div>
       </div>
@@ -32,6 +32,7 @@ export default {
   name: 'HeaderItem',
   props: {
     title: String,
+    url: String,
     paragraph: String,
     video: String,
     year: String,

@@ -28,7 +28,6 @@ export default {
     async function getHeader () {
       try {
         const response = await ContentHeader.getProjects()
-        console.log(response)
         self.slides = response.data.records
       } catch ( err ) {
         console.log( err )
@@ -38,18 +37,19 @@ export default {
   },
   computed: {
     headers () {
-      let self = this
-      let headerList = []
-      for  ( let i = 0; i < self.slides.length; i++ ) {
+      let self = this;
+      let headerList = [];
+      for (let i = 0; i < self.slides.length; i++) {
         let headers = {
           title: self.slides[i].fields.Title,
+          url: self.slides[i].fields.Url,
           paragraph: self.slides[i].fields.Paragraph,
           video: self.slides[i].fields.Video,
           year: self.slides[i].fields.Year,
           taxonomy: self.slides[i].fields.Taxonomy,
-          enabled: self.slides[i].fields.Preview,
-        }
-        headerList.push ( headers )
+          enabled: self.slides[i].fields.Preview
+        };
+        headerList.push(headers);
       }
       return headerList
     }
