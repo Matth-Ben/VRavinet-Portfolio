@@ -3,7 +3,7 @@
     <div v-if="show" class="preloader">
       <div class="logo">
         <video autoplay>
-          <source src="../public/video/intro-victorrvnt-4k-60fps.webm" type="video/webm">
+<!--          <source src="../public/video/intro-victorrvnt-4k-60fps.webm" type="video/webm">-->
         </video>
       </div>
     </div>
@@ -13,16 +13,16 @@
 <script>
 export default {
   name: 'preloader',
-  data(){
+  data () {
     return {
       show: true
     }
   },
-  mounted(){
-    if(Boolean(this.show)) this.showToggle()
+  mounted () {
+    if (this.show) this.showToggle()
   },
   methods: {
-    showToggle(){
+    showToggle () {
       setTimeout(() => {
         this.show = false
       }, 6000)
