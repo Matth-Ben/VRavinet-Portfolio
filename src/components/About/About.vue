@@ -1,15 +1,15 @@
 <template>
   <div id="about">
     <div class="content">
-      <div class="container pt-5 pb-5 row">
-        <div class="col6">
+      <div class="container pt-5 pb-5 row column-sm">
+        <div class="col6 order-sm-1">
           <div class="about--content">
             <div class="about--content--image">
               <img src="../../public/image/profile_vr.jpg" width="660">
             </div>
           </div>
         </div>
-        <div class="col6">
+        <div class="col6 order-sm-0">
           <div class="about--content">
             <div class="about--content--container">
               <h2 class="about--content--title">A propos de moi</h2>

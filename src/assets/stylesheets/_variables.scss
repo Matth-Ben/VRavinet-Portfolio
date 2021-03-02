@@ -14,7 +14,7 @@ h2 {
 }
 
 p {
-  font-size: 1.3vw;
+  font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.5px;
 }
@@ -128,5 +128,11 @@ $sides: (top, bottom, left, right);
   }
   &.grey {
     border-color: $grey;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container {
+    width: 100%;
   }
 }

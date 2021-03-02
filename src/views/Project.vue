@@ -7,8 +7,8 @@
     </div>
     <section class="single--project">
       <div class="container">
-        <div class="row">
-          <div class="col6">
+        <div class="row column-sm">
+          <div class="col6 order-sm-1">
             <div class="single--project--galery">
               <div v-if="!!project.photoPreview">
                 <div v-for="image in project.photoPreview">
@@ -37,7 +37,7 @@
               </div>
             </div>
           </div>
-          <div class="col6">
+          <div class="col6 order-sm-0">
             <div class="single--project--content">
               <div>
                 <h1 class="mt-0 mb-0">{{ project.title }}</h1>

@@ -25,3 +25,22 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  #about {
+    .content {
+      .about--content {
+        .about--content--image {
+          text-align: center;
+        }
+        .about--content--container {
+          .about--content--paragraph {
+            .about--content--paragraph--item {
+              min-height: 30vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

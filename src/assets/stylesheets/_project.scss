@@ -96,3 +96,13 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  #project {
+    .single--project--galery {
+      padding: 0;
+      overflow-y: inherit;
+      max-height: inherit;
+    }
+  }
+}
